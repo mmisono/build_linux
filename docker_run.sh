@@ -5,4 +5,4 @@
 docker run --privileged=true \
            -v $PWD/share:/share \
            --mount source=linux-vol,target=/linux \
-           -it linux_build
+           --rm -it linux_build

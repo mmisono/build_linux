@@ -6,4 +6,4 @@ docker run --privileged=true \
            -v $PWD/share:/share \
            --mount source=linux-vol,target=/linux \
            --entrypoint /work/build_linux.sh \
-           -it linux_build
+           --rm -it linux_build
